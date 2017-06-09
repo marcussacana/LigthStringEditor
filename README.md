@@ -6,7 +6,7 @@ A DLL Library tool to allow you write your own string editor in C#
 to edit MeliaEngine, dat string files. (don't support dat packget's)
 
 
-A tool to translate strings from "Dies irae ~Amantes amentes~" (Files: DAT)
+A tool to translate strings from "Dies irae \~Amantes amentes\~" (Files: DAT)
 
 
 ## Notes:
