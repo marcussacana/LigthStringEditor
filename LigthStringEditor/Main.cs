@@ -147,6 +147,6 @@ namespace LigthStringEditor
             return Script.BaseStream.Position;
         }
 
-        private long StrTblLen { get { return Script.BaseStream.Length - Script.BaseStream.Position - 4; }
+        private long StrTblLen { get { return Script.BaseStream.Length - Script.BaseStream.Position - 4; } } 
     }
 }
