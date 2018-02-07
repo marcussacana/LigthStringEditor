@@ -15,7 +15,9 @@ namespace LigthStringEditor
     public class LightDat {
         private bool LastLengthCheck = false;
         private StructReader Script;
-        public LightDat(byte[] Script) => this.Script = new StructReader(new MemoryStream(Script), false, Encoding.Unicode);
+        public LightDat(byte[] Script) {
+			this.Script = new StructReader(new MemoryStream(Script), false, Encoding.Unicode);
+		}
 
         Encoding Encoding = Encoding.Unicode;
         long StringTablePos = 0;
@@ -145,6 +147,6 @@ namespace LigthStringEditor
             return Script.BaseStream.Position;
         }
 
-        private long StrTblLen => Script.BaseStream.Length - Script.BaseStream.Position - 4;
+        private long StrTblLen { get { return Script.BaseStream.Length - Script.BaseStream.Position - 4; }
     }
 }

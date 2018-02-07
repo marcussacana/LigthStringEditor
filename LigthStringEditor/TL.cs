@@ -7,7 +7,7 @@ namespace LigthStringEditor {
     public class DatTL {
 
         LightDat Editor;
-        public DatTL(byte[] Script) => Editor = new LightDat(Script);
+        public DatTL(byte[] Script) { Editor = new LightDat(Script); }
 
         private Dictionary<SplitInf, string> Cutted;
         private Dictionary<uint, uint> SplitMap;
