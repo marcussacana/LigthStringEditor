@@ -56,7 +56,7 @@ namespace LigthStringEditor {
                 SplitMap.Add(x, (uint)Split.LongCount());
                 SplitedStrings.AddRange(Split);
             }
-            string tmp = SplitedStrings[59946];
+            //string tmp = SplitedStrings[59946];
 
             return SplitedStrings.ToArray();
         }
